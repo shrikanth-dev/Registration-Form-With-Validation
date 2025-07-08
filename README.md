@@ -32,12 +32,12 @@
 
 ### Screenshot
 
-![](./screenshots/results-summary-component-desktop-img.png)
+![](Registration-Form.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/shrikanth-dev/Registration-Form-With-Validation)
+- Live Site URL: [live site URL](https://shrikanth-dev.github.io/Registration-Form-With-Validation/)
 
 ### Built with
 
