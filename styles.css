@@ -1,0 +1,171 @@
+fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.div1,.div2,.rc,.cd,.div6{
+    display: flex;
+    flex: 100%;
+ 
+}
+
+.div4{
+    margin-left: 141px;
+}
+
+.comment{
+    height: 70px;
+    align-self: center;
+    border: 1px solid black;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    column-gap: 5px;
+    padding: 1px;
+    justify-content: center;
+}
+
+.footerpad{
+    padding: 10px 30px;
+}
+
+.foo{
+    color: white;
+    background-color: rgb(27, 197, 27);
+}
+
+.foo:hover{
+    border: 1px solid rgb(0, 128, 128);
+}
+.foot{
+    color: white;
+    background-color: rgb(228, 83, 83);
+}
+
+.foot:hover{
+    border: 1px solid rgb(107, 6, 6)
+}
+
+.formLabel{
+margin: 70px;
+margin-right: 5px;
+
+}
+
+.formm{
+    margin: 0px;
+}
+
+.formdate{
+    margin-left: 70px;
+}
+
+.forminput2{
+margin-left: 18px;
+}
+
+.forminput{
+    padding: 10px;
+    padding-right: 237px;
+    border: 1px solid black;
+}
+
+.inputdate{
+    margin-left: 28px;
+    padding-right: 295px;
+}
+
+.selectc{
+    padding-right: 265px;
+}
+
+.formdv3 {
+    padding-right: 260px;
+    border: 1px solid black
+}
+
+.rc{
+margin-left: 61px;
+}
+.formcheck{
+    margin-left: 26px;
+    padding-right: 105px;
+    margin-right: 90px;
+    border: 1px solid black;
+}
+
+input:hover,textarea:hover, select:hover {
+   border: 1px solid rgb(55, 161, 34);
+}
+
+input[type='radio']:hover{
+      box-shadow: 0px 0px 1px 2px  rgb(55, 161, 34);
+}
+
+input[type="checkbox"]:hover {
+        box-shadow: 0px 0px 1px 2px  rgb(55, 161, 34);
+}
+
+input:focus,textarea:focus, select:focus {
+   border: 1px solid rgb(34, 126, 187);
+}
+
+input[type='radio']:focus {
+      box-shadow: 0px 0px 1px 2px   rgb(34, 126, 187);
+}
+input[type="checkbox"]:focus {
+        box-shadow: 0px 0px 1px 2px   rgb(34, 126, 187);
+}
+
+@media (max-width: 760px) {
+    .div1,.div2,.cd,.rc{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .foormLabel{
+        padding: 100%;
+    }
+
+    .div1a,.div2a,.div5{
+        flex: 0 0 100%;
+    }
+
+    .div3,.div4{
+        flex: 0 0 68%;
+    }
+
+    .div4{
+        margin-left: 0px;
+    }
+
+    .inputdate{
+    padding-right: 281px;
+    }
+
+    .forminput1{
+        padding-right: 220px;
+    }
+
+    .forminput2 {
+    margin-left: 0px;
+    }
+
+    .comment{
+        padding-right: 14px;
+    }
+
+    .formLabel {
+    margin: 5px;
+    }
+
+    .rc {
+    margin-left: 5px;
+    }
+      
+    }

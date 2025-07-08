@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+<script>
+function validateform(){  
+var name = document.myform.Fname.value; 
+ var Lname  = document.myform.Lname.value; 
+var email = document.myform.email.value;
+var atposition = email.indexOf('@');
+var dotPosition = email.lastIndexOf(".");
+var password = document.myform.Password.value;  
+
+if (name==null || name=="" || name.length < 3){  
+  alert("Please enter a valid name \n Fname: " + name);  
+  return false;  
+
+}else if (Lname==null || Lname=="" || Lname.length < 4){  
+  alert("LName can't be blank");  
+  return false;  
+}else if(atposition < 1 || dotPosition < atposition + 2 || dotPosition + 2 > email.length){
+   alert("please enter a valid email \n  atposition: " + atposition + "\n dotPosition: " + dotPosition);
+   return false;
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }else {
+    console.log("fname: " + name + "\n Lname: " + Lname + "\n email: " + email);
+  }
+}    
+</script>
+    <title>Regstration Form</title>
+</head>
+<body>
+    <form action="/page.resource" name="myform" onsubmit="return validateform()" method="post">
+<div class="container">
+<fieldset>
+ <legend>Persons details</legend>
+ <div class="div1">
+
+    <div class="div1a">
+        <label for="fname" class="formLabel"  >Fname:</label>
+        <input type="text" class="forminput" name="Fname" placeholder="eg.vangavti" required >
+    </div>
+    <div class="div1b">
+        <label for="lname" class="formLabel" >Lname:</label>
+        <input type="text" class="forminput  forminput2 " id="lname" name="Lname" placeholder="ramana"  required>
+    </div>
+
+ </div>
+ <div class="div2">
+    <div class="div2a">
+        <label for="email" class="formLabel" >E-mail:</label>
+        <input type="email" class="forminput hov" name="email" id="email" placeholder="xyz123@gmail.com" required>
+    </div>
+    <div class="div2b">
+        <label for="password" class="formLabel"  >Password:</label>
+        <input type="password" class="forminput forminput1 hov" id="password" name="Password" placeholder="min 8 charecters length" required>
+    </div>  
+ </div>
+
+ <div class="cd">
+    <div class="div5">
+       <label for="city" class="formLabel" >select your city:</label>
+       <select name="city" class="forminput selectc hov" id="city">
+           <option value="hyderabad">Hyderabad</option>
+           <option value="Bengulur">Bengulur</option>
+           <option value="vizag">Vizag</option>
+           <option value="Delhi">Delhi</option>
+       </select>
+    </div>
+    <div class="date">
+       <label for="date" class="formLabel formdate" >Date:</label>
+       <input type="date" class="forminput inputdate hov" name="date" id="date">
+    </div>
+   </div> 
+
+   <div class="div6" >
+    <label for="comment" class="formLabel">About yourself:</label><br>
+    <textarea class="comment hov" id="comment" cols="47" rows="5" ></textarea>
+ </div>
+
+ <div class="rc">
+ <div class="div3" >
+    <fieldset class="formLabel formdv3 formm">
+        <legend>gender</legend>
+        <div class="dv3a ">
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="">male</label>
+        </div>
+        <div class="dv3b">
+            <input type="radio" name="gender" id="female"value="female">
+            <label for="">female</label>
+        </div>
+        <div class="dv3c">
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">other</label>
+        </div>
+   </fieldset>
+ </div>
+
+ <div class="div4">
+    <fieldset class="formLabel formcheck formm">
+        <legend>Interests</legend>
+    <div class="checkbox1">
+        <input type="checkbox" name="intersts" id="arts" value="arts">
+        <label for="arts">arts</label>
+    </div>
+    <div class="checkbox2">
+        <input type="checkbox" name="interests" id="sports" value="sports">
+        <label for="sports">Sports</label>
+    </div>
+    <div class="checkbox3">
+        <input type="checkbox" name="interests" id="music" value="music">
+        <label for="music">Music</label>
+    </div>
+    <div class="checkbox4">
+        <input type="checkbox" name="intersts" id="coding" value="coding">
+        <label for="coding">Coding</label>
+    </div>
+    </div>
+</fieldset>
+</div>
+   <div>
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                <input type="submit" class="foo footerpad" value="Submit">
+            </div>
+            <div class="footer2">
+                <input type="reset" class="foot footerpad" value="Reset">
+            </div>
+        </div>
+    </footer>
+   </div>
+  </form> 
+</body>
+</html>
